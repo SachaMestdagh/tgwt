@@ -1,0 +1,106 @@
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="exponential.js"></script>
+
+<div class="mapoutline d-flex align-items-end justify-content-center flex-column" id="mapoutline"> </div>
+
+<div class="continentsandcountries">
+<ul id="accordion" class="accordion">
+    <h3>DESTINATIONS.</h3> <br>
+  <li>
+    <div class="link"><i class=""></i>✘ Europe</div>
+    <ul class="submenu">
+      <li><a href="#">Spain</a></li>
+      <li><a href="#">Portugal</a></li>
+      <li><a href="#">Italy</a></li>
+      <li><a href="#">France</a></li>
+      <li><a href="#">Belgium</a></li>
+    </ul>
+  </li>
+  <li>
+    <div class="link"><i class=""></i>✘ Asia</div>
+    <ul class="submenu">
+      <li><a href="#">Indonesia</a></li>
+      <li><a href="#">Singapore</a></li>
+      <li><a href="#">Japan</a></li>
+    </ul>
+  </li>
+  <li>
+    <div class="link"><i class=""></i>✘ Oceania</div>
+    <ul class="submenu">
+      <li><a href="#">Australia</a></li>
+      <li><a href="#">New Zeland</a></li>
+    </ul>
+  </li>
+
+  <li>
+    <div class="link"><i class=""></i>✘ Africa</div>
+    <ul class="submenu">
+      <li><a href="#">Morroco</a></li>
+      <li><a href="#">Johanesburg</a></li>
+    </ul>
+  </li>
+
+  <li>
+    <div class="link"><i class=""></i>✘ South America</div>
+    <ul class="submenu">
+      <li><a href="#">Argentina</a></li>
+      <li><a href="#">Peru</a></li>
+      <li><a href="#">Colombia</a></li>
+      <li><a href="#">Mexico</a></li>
+    </ul>
+  </li>
+
+    <li>
+    <div class="link"><i class=""></i>✘ North America</div>
+    <ul class="submenu">
+      <li><a href="#">Florida</a></li>
+      <li><a href="#">California</a></li>
+      <li><a href="#">Utah</a></li>
+      <li><a href="#">Nevada</a></li>
+      <li><a href="#">Arizona</a></li>
+    </ul>
+  </li>
+
+
+
+
+
+</ul>
+</div>
+
+<script>
+
+$(function() {
+  var Accordion = function(el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
+
+    // Variables privadas
+    var links = this.el.find('.link');
+    // Evento
+    links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+  }
+
+  Accordion.prototype.dropdown = function(e) {
+    var $el = e.data.el;
+      $this = $(this),
+      $next = $this.next();
+
+    $next.slideToggle();
+    $this.parent().toggleClass('open');
+
+    if (!e.data.multiple) {
+      $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+    };
+  }
+
+  var accordion = new Accordion($('#accordion'), false);
+});
+</script>
+
+
+<div class="caption2 text-center">
+    <p> COMING UP !!!!!!!!!</p>
+  </div>

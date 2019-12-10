@@ -1,0 +1,33 @@
+<div class="accountbg d-flex align-items-end justify-content-center flex-column" id="accountbg"> </div>
+
+<div class="accountcard">
+<ul id="accordion" class="accordion">
+    <h3>ACTION.</h3> <br>
+  <li>
+    <%= link_to "Add a Destination",  root_path, class: 'adminact1' %>
+  </li>
+  <li>
+    <%= link_to "Add a place to stay",  root_path, class: 'adminact1' %>
+  </li>
+  <li>
+    <%= link_to "Add a place to eat",  root_path, class: 'adminact1' %>
+  </li>
+
+  <li>
+    <%= link_to "Add a place to visit",  root_path, class: 'adminact1' %>
+  </li>
+
+  <li>
+    <%= link_to "Change Password.",  edit_user_password_path, class: 'adminact1' %>
+  </li>
+
+    <li>
+    <%= link_to "Log Out.",  destroy_user_session_path, class: 'adminact1' %>
+  </li>
+
+
+
+
+
+</ul>
+</div>

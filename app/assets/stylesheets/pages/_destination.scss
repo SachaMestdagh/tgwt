@@ -1,0 +1,122 @@
+
+
+.container{
+    width: 100%;
+    // padding-right: 15px;
+    // padding-left: 0px !important;
+    // margin-right: auto;
+    // margin-left: 0px !important;
+}
+
+#mapoutline {
+  background-image: asset_url('mapoutline.png');
+}
+
+.mapoutline {
+  margin-top:5%;
+  background-size: cover;
+  background-position: center;
+   height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 0;
+  margin-left: 5%;
+}
+
+#fpbg {
+  background-image: linear-gradient(rgba(0,0,0,0.01),rgba(0,0,0,0.01)), asset_url('firstpage.jpg');
+}
+
+.fpbg {
+  background-size: cover;
+  background-position: center;
+   height: 50vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 0;
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0.9;
+  }
+}
+
+
+#aboutbg {
+  background-image: linear-gradient(rgba(0,0,0,0.01),rgba(0,0,0,0.01)), asset_url('sachandmax.jpg');
+}
+
+.aboutbg {
+  background-size: cover;
+  background-position: center;
+   height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 0;
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0.9;
+  }
+}
+
+
+#blogbg {
+  background-image: linear-gradient(rgba(0,0,0,0.01),rgba(0,0,0,0.01)), asset_url('blog.jpg');
+}
+
+.blogbg {
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 0;
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0.9;
+  }
+}
+
+#accountbg {
+  background-image: linear-gradient(rgba(0,0,0,0.01),rgba(0,0,0,0.01)), asset_url('accountbg.jpg');
+}
+
+.accountbg {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 0;
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0.9;
+  }
+}
+
+
+.countriesname{
+  p{
+    color: red;
+    z-index:100;
+    position: fixed;
+    size: 30px;
+  }
+}

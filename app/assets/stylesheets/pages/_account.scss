@@ -1,0 +1,25 @@
+.accountcard{
+  background-color: white !important;
+  padding: 100px;
+  display: flex;
+  position: absolute;
+  top: 17%;
+  margin-left: 70%;
+  border: solid 3px black;
+  text-align: left;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul { list-style-type: none; }
+
+a {
+  color: darkgrey;
+  text-decoration: none;
+  &:hover{
+    color:black;
+  }
+}
+}

@@ -1,1 +1,211 @@
 // Specific CSS for your home-page
+#banner {
+  background-image: linear-gradient(rgba(0,0,0,0.01),rgba(0,0,0,0.01)), asset_url('background.jpeg');
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+   height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 0;
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0.9;
+  }
+}
+
+
+
+.btnhome{
+
+  padding:20px;
+  border-radius: 5px;
+  border: solid 4px black;
+  font-weight: 900;
+  font-size: 15px;
+  color: black;
+  letter-spacing: .5rem;
+  &:hover{
+    text-decoration: none;
+    color:#f9c798;
+  }
+}
+
+.navbtns {
+font-family: "Bebas Neue";
+ display: flex;
+ margin-right: -60px;
+  p{
+    margin-right:50px;
+    font-family: "Bebas Neue";
+    color: black;
+    &:hover{
+      color: #f9c798;
+    }
+  }}
+
+  .navbtnswhite {
+ display: flex;
+ margin-right: 5px;
+  p{
+    color:white;
+    margin-right:50px;
+    color: black;
+    &:hover{
+      color: #f9c798;
+    }
+  }}
+
+  .linknav{
+    margin-right:50px;
+    color: black;
+    &:hover{
+      color: #f9c798;
+    }
+  }
+
+.caption {
+  position:absolute;
+  top: 75%;
+  width: 100%;
+  color: white;
+}
+
+.africa-card {
+  position:absolute;
+  top: 50%;
+  width: 8%;
+  margin-left: 50%;
+}
+
+.caption2 {
+  position:absolute;
+  font-family: "Bebas Neue";
+  top: 40%;
+  width: 100%;
+  color: black;
+
+
+  p{
+    letter-spacing: .9rem;
+    padding-bottom: 16px;
+    font-size: 50px;
+  }
+   h3{
+    top: 40%;
+    font-size: 3rem;
+    letter-spacing: .9rem;
+    padding-bottom: 16px;
+  }
+
+}
+
+
+.continentsandcountries{
+  background-color: white !important;
+  padding: 30px;
+  display: flex;
+  position: absolute;
+  top: 17%;
+  margin-left: 3%;
+  border: solid 3px black;
+  text-align: left;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul { list-style-type: none; }
+
+a {
+  color: #b63b4d;
+  text-decoration: none;
+}
+
+
+
+.accordion {
+  width: 100%;
+  max-width: 360px;
+  margin: 30px auto 20px;
+
+}
+
+.accordion .link {
+  cursor: pointer;
+  display: block;
+  padding: 15px 15px 15px 42px;
+  color: black;
+  font-size: 20px;
+  // font-weight: 700;
+  font-family: "Bebas Neue";
+  // border-bottom: 1px solid #CCC;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link { border-bottom: 0; }
+
+.accordion li i {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 18px;
+  color: #f9c798;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 16px;
+}
+
+.accordion li.open .link { color: #f9c798; }
+
+.accordion li.open i { color: #f9c798; }
+
+.accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+
+.submenu {
+  display: none;
+  font-size: 14px;
+}
+
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 12px;
+  padding-left: 42px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.submenu a:hover {
+  color: black;
+  font-weight: 600;
+  background-color: rgba(249, 199, 152, 0.090);
+}
+
+}

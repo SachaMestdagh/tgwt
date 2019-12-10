@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-sm navbar-light justify-content-between px-5 fixed-top">
+          <%= link_to "TGWT.", root_path, class: "navbtns-logo"%>
+
+        <%#= link_to image_tag("logo-black.png"), root_path, class: "navbar-brand py-0 mx-5"%>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbtns">
+    <%= link_to "Destinations", destination_path, class: 'linknav' %>
+    <%= link_to "Blog", blog_path, class: 'linknav' %>
+    <%= link_to "About us", about_path, class: 'linknav' %>
+    <% if user_signed_in? %>
+    <%= link_to "ACCOUNT.", account_path, class: 'linknav' %>
+    <% end %>
+  </div>
+      </div>
+    </div>
+</nav>
