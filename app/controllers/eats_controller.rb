@@ -1,0 +1,2 @@
+class EatsController < ApplicationController
+end

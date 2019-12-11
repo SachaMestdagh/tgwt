@@ -44,3 +44,44 @@ margin-right: 10px;
 .navbtns-logo {
   font-size: 50px;
 }
+
+.navbar-light .navbar-toggler{
+  border: none;
+  color: black
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .navbtns {
+    font-size: 20px;
+    justify-content: end;
+    margin-left: 80%;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .navbtns {
+    font-size: 13px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .navbtns {
+    font-size: 25px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .navbtns {
+
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .navbtns {
+
+  }
+}

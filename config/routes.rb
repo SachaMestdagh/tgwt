@@ -5,9 +5,25 @@ Rails.application.routes.draw do
     get '/error', to: 'pages#error'
   get 'destination', to: 'pages#destination', as: :destination
   get 'profile', to: 'pages#profile', as: :profile
-  # get 'test', to: 'pages#test', as: :test
   get 'blog', to: 'pages#blog', as: :blog
   get 'about', to: 'pages#about', as: :about
   get 'account', to: 'pages#account', as: :account
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+
+  resources :continents do
+    resources :countries, only: [ :new, :create, :destroy, :show ]
+  end
+
+  resources :countries do
+    resources :cities, only: [ :new, :create, :destroy, :show ]
+  end
+
+  resources :cities do
+    resources :visits, only: [ :new, :create, :destroy, :show ]
+    resources :eats, only: [ :new, :create, :destroy, :show ]
+    resources :sleeps, only: [ :new, :create, :destroy, :show ]
+  end
+
+    resources :articles, only: [:update, :create, :edit, :show, :destroy]
+
 end
