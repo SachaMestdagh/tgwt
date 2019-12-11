@@ -4,17 +4,30 @@
         <%#= link_to image_tag("logo-black.png"), root_path, class: "navbar-brand py-0 mx-5"%>
 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="fas fa-align-justify"></span>
+
   </button>
 
+  <div class="collapse navbar-collapse  mx-5" id="navbarSupportedContent">
   <div class="navbtns">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
     <%= link_to "Destinations", destination_path, class: 'linknav' %>
+      </li>
+      <li>
     <%= link_to "Blog", blog_path, class: 'linknav' %>
+    </li>
+    <li>
     <%= link_to "About us", about_path, class: 'linknav' %>
+    </li>
+    <li>
     <% if user_signed_in? %>
     <%= link_to "ACCOUNT.", account_path, class: 'linknav' %>
     <% end %>
+    </li>
+  </ul>
   </div>
       </div>
     </div>
+  </nav>
 </nav>
