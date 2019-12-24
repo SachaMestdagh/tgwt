@@ -1,14 +1,45 @@
 <div class="blogbg d-flex align-items-end justify-content-center flex-column" id="blogbg"> </div>
 
+
+<div class="container">
+
+<h1>News</h1>
 <div class="articles3">
-  <%#= @articles.each do |article| %>
-    <%#= article.title %>
-  <%#= end %>
+  <% articles = Article.last(6) %>
+  <% articles.each do |a| %>
+  <%= link_to article_path(a), :class => "text-cards" do %>
+  <div class="cardarticles">
+  <h3>  <%= a.title %>  </h3>
+    <div class="imgarticleblog">
+    <%= images = cl_image_tag a.article_photos[0].photo_url, style: "width:300px; height: 190px; object-fit: cover" %>
+    </div>
+  <p> <%= a.summary %> </p>
+  <% end %>
+
+  </div>
+        <% end %>
+
+             <%= link_to "See all news", articles_path, :class => "text-cards"  %>
+
+
 </div>
 
+<h1>Tips and Trick</h1>
+<div class="articles3">
+  <% tips = Tip.last(3) %>
+  <% tips.each do |a| %>
+  <%= link_to tip_path(a), :class => "text-cards" do %>
+  <div class="cardarticles">
+  <h3>  <%= a.title %>  </h3>
+    <div class="imgarticleblog">
+    <%= images = cl_image_tag a.tip_photos[0].photo_url, style: "width:300px; height: 190px; object-fit: cover" %>
+    </div>
+  <p> <%= a.summary %> </p>
+  <% end %>
 
 
-
-<div class="caption2 text-center">
-    <p> COMING UP !!!!!!!!!</p>
   </div>
+
+  <% end %>
+</div>
+</div>

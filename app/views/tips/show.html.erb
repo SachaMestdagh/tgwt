@@ -1,0 +1,26 @@
+new.html.erb
+
+<div class="tipshow">
+
+
+  <h1> <%= @tip.title %>
+      <span class="iconseditdelete">
+          <%# if current_user == @tip.user %>
+          <%= link_to edit_tip_path(@tip) do %><i class="fas fa-edit" style=""></i></%><% end %>
+          <%= link_to blog_path, method: :delete, data: { confirm: 'Are you sure you want to delete this tip?' }  do %><i class="fas fa-trash"></i><% end %>
+          </span>
+        </h1>
+<!--   <p> <%= @tip.summary %> </p>
+ -->
+
+<div class="tipcontent">
+      <div id="photos" >
+                    <% @tip.tip_photos[0..-1].each do |c| %>
+                      <%= cl_image_tag c.photo_url%>
+                      <% end %>
+        </div>
+
+    <p> <%= @tip.content %> </p>
+
+   </div>
+</div>

@@ -1,4 +1,24 @@
-<nav class="navbar navbar-expand-sm navbar-light justify-content-between px-5 fixed-top">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="exponential.js"></script>
+
+<script>
+    $(document).ready(function(){
+      $(window).scroll(function() { // check if scroll event happened
+        if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+          $("#nav").css("background-color", "white"); // if yes, then change the color of class "nav-fixed-top" to white (#f8f8f8)
+        } else {
+          $("#nav").css("background-color", "transparent"); // if not, change it back to transparent
+        }
+      });
+    });
+</script>
+
+
+
+
+<nav class="navbar navbar-expand-sm navbar-light justify-content-between px-5 fixed-top" id="nav">
           <%= link_to "TGWT.", root_path, class: "navbtns-logo"%>
 
         <%#= link_to image_tag("logo-black.png"), root_path, class: "navbar-brand py-0 mx-5"%>
