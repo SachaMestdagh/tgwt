@@ -24,6 +24,7 @@ Rails.application.routes.draw do
     resources :sleeps, only: [ :new, :create, :destroy, :show ]
   end
 
-    resources :articles, only: [:update, :create, :edit, :show, :destroy]
+    resources :articles, only: [:update, :create, :new, :edit, :show, :index, :destroy]
+    resources :tips, only: [:update, :create, :new, :edit, :show, :index, :destroy]
 
 end

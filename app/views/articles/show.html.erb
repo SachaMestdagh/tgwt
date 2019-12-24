@@ -1,0 +1,25 @@
+<div class="articleshow">
+
+
+  <h1> <%= @article.title %>
+      <span class="iconseditdelete">
+          <%# if current_user == @article.user %>
+          <%= link_to edit_article_path(@article) do %><i class="fas fa-edit" style=""></i></%><% end %>
+          <%= link_to blog_path, method: :delete, data: { confirm: 'Are you sure you want to delete this article?' }  do %><i class="fas fa-trash"></i><% end %>
+          </span>
+        </h1>
+<!--   <p> <%= @article.summary %> </p>
+ -->
+
+<div class="articlecontent">
+      <div id="photos" >
+                    <% @article.article_photos[0..-1].each do |c| %>
+                      <%= cl_image_tag c.photo_url%>
+                      <% end %>
+        </div>
+
+    <p> <%= @article.content %> </p>
+
+   </div>
+</div>
+

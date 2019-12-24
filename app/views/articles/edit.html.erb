@@ -1,0 +1,35 @@
+<div class="accountbg d-flex align-items-end justify-content-center flex-column" id="accountbg"> </div>
+
+ <div class="inputforms">
+<%= simple_form_for(@article, html: { multipart: true }) do |f| %>
+
+    <% if @article.errors.any? %>
+    <div class="errors-container">
+      <ul>
+        <% @article.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+    <% end %>
+
+    <h1> Edit this article </h1>
+
+  <div class="form-inputs">
+    <%= f.input :title,
+       label: false,
+       placeholder: 'Title' %>
+       <%= f.input :summary,
+       label: false,
+       placeholder: 'Summary' %>
+       <%= f.input :content,
+       label: false,
+       placeholder: 'Content',
+       :as => :text %>
+       <h5>Add pictures</h5>
+      <%= f.file_field :article_photos, multiple: true, accept: "image/jpeg, image/jpg, image/gif, image/png", input_html: { name: 'Photos', label: 'Photos' } %>
+      <%= f.button :submit, 'Add an Article.' , class: "addamealbtn mb-3", style: "width: 80%;" %>
+  </div>
+<% end %>
+
+</div>

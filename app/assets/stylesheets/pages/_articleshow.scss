@@ -1,0 +1,101 @@
+.articleshow {
+margin-top: 10%;
+margin-bottom: 10%;
+text-align: center;
+align-items: center;
+   h1{
+    margin-bottom: 5%;
+   }
+}
+
+
+.articles3{
+    margin-left: 5%;
+    margin-bottom: 10%;
+    width: 90%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &:hover{
+      text-decoration: none;
+    }
+  h3{
+    color:black;
+    text-decoration:none;
+    &:hover{
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+    p{
+    color:black;
+    text-decoration:none;
+    &:hover{
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+}
+
+.cardarticles{
+  width: 300px;
+  padding: 10px;
+  &:hover{
+    background-color: rgba(242, 242, 242, 0.803);
+
+  }
+
+  a{
+  &:hover{
+      text-decoration: none;
+    }
+    }
+}
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         2;
+  column-gap:           0px;
+  width:1000px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  padding:10px;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.iconseditdelete {
+  font-size: 20px;
+  margin-left: 5%;
+a{
+  color: black;
+  size: 10px;
+}
+}
+
+.articlecontent{
+  display: flex;
+  margin-right: 5%;
+
+  p{
+    font-family: "Quicksand";
+    font-weight: 100px;
+    font-size: 15px;
+    width: 350px;
+    margin-left: 2%;
+    text-align: justify;
+
+  }
+}
